@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_text_size">18sp</dimen>
+    <dimen name="header_margin_top">8dp</dimen>
+    <dimen name="form_margin_top">16dp</dimen>
+    <dimen name="standar_margin">16dp</dimen>
+    <dimen name="landscape_margin">32dp</dimen>
+</resources>

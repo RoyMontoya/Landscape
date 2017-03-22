@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Landscape</string>
+    <string name="first_name">First Name:</string>
+    <string name="hint_first_name">Introduce your first name here</string>
+    <string name="last_name">Last Name:</string>
+    <string name="notes_header">Notes:</string>
+    <string name="hint_last_name">Introduce you last name here</string>
+    <string name="hint_notes">Write here any note</string>
+</resources>

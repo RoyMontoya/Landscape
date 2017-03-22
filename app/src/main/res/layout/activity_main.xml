@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rmontoya.landscape.MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        style="@style/profile_image_style"
+        android:layout_marginTop="@dimen/standar_margin"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/include_layout"
+        android:layout_below="@id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/form_layout"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/include_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/notes_layout" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
