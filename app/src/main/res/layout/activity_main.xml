@@ -12,23 +12,17 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/standar_margin" />
 
-    <RelativeLayout
+    <include
         android:id="@+id/include_layout"
+        layout="@layout/form_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_image">
+        android:layout_below="@id/profile_image" />
 
-        <include layout="@layout/form_layout" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
+    <include
+        layout="@layout/notes_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/include_layout">
-
-        <include layout="@layout/notes_layout" />
-    </RelativeLayout>
-
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_layout" />
 
 </RelativeLayout>

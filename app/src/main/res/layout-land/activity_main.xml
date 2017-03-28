@@ -9,21 +9,17 @@
         style="@style/profile_image_style"
         android:layout_margin="@dimen/landscape_margin" />
 
-    <RelativeLayout
-        android:id="@+id/form_layout_container"
+    <include
+        android:id="@+id/form_layout"
+        layout="@layout/form_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_image" />
+
+    <include
+        layout="@layout/notes_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/profile_image">
-
-        <include layout="@layout/form_layout"></include>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/form_layout_container">
-
-        <include layout="@layout/notes_layout" />
-    </RelativeLayout>
+        android:layout_below="@id/form_layout" />
 
 </RelativeLayout>
